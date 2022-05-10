@@ -4,15 +4,40 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'posts'
+    label: 'Post'
+    folder: 'content/posts'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'projects'
+    label: 'Project'
+    folder: 'content/projects'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Page'
+    folder: 'content/pages'
+    create: true
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
