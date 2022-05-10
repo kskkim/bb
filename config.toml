@@ -1,6 +1,6 @@
 baseURL = ""
 languageCode = "en-us"
-title = "Liste"
+title = "Building Blocks"
 disableKinds = ["section", "categories", "tags"]
 disqusShortname = ""
 pygmentsCodeFences = false
@@ -29,7 +29,7 @@ disableHugoGeneratorInject = true
     disable = true
 
 [Author]
-  name = "Liste"
+  name = "Kim Sheng Kai"
 
 [params]
   description = "Minimalistic Hugo blogging theme"
@@ -43,7 +43,7 @@ disableHugoGeneratorInject = true
   github = ""
   facebook = ""
   og_image = ""
-  sitename = "Liste"
+  sitename = "Building Blocks"
   twitter = ""
 
 [permalinks]
