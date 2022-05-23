@@ -1,7 +1,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Building Blocks"
-disableKinds = ["section", "categories", "tags"]
+disableKinds = ["section"]
 disqusShortname = ""
 pygmentsCodeFences = false
 pygmentsUseClasses = false
